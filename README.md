@@ -1,8 +1,3 @@
-# Weather-Type-Prediction-Based-on-Historical-Data
-
-Here's a well-formatted and presentable README file for your GitHub project:
-
----
 
 # **Weather Type Prediction Based on Historical Data**
 
