@@ -1,9 +1,9 @@
 
-# **Weather Type Prediction Based on Historical Data**
+# **Weather Type Prediction**
 
 ## **Project Description**
 
-This project aims to develop a machine learning model that can accurately predict the type of weather based on historical weather data.
+This project aims to develop a machine learning model that can accurately predict the type of weather based on historical weather data and deploy a web application using Streamlit.
 
 ## **Objective**
 
@@ -12,13 +12,17 @@ To create a robust machine learning model capable of predicting weather types us
 ## **Dataset**
 
 The dataset includes the following weather features:
-- **Date/Time**
-- **Temp_C** (Temperature in Celsius)
-- **Dew Point Temp_C** (Dew Point Temperature in Celsius)
-- **Rel Hum_%** (Relative Humidity in percentage)
-- **Wind Speed_km/h** (Wind Speed in kilometers per hour)
-- **Visibility_km** (Visibility in kilometers)
-- **Press_kPa** (Pressure in kilopascals)
+
+- **Temperature** (Temperature in Celsius)
+- **Humidity** (Humidity in percentage)
+- **Wind Speed** (Wind Speed in kilometers per hour)
+- **Precipitation (%)** (Precipitation in percentage)
+- **Cloud Cover** (Partly cloudy, Clear , Overcast ,Cloudy)
+- **Atmospheric Pressure** (Pressure in hpascals)
+- **UV Index** (UV Index in the range 0-13)
+- **Season** (Summer, Spring, Autumn, Winter)
+- **Visibility (km)** (Visibility in kilometer)
+- **Location** (Inland, Coastal, Mountain)
 - **Weather type** (Categorical weather type)
 
 ## **Approach**
@@ -28,13 +32,14 @@ The dataset includes the following weather features:
 - Normalize numerical features to ensure consistent scaling.
 
 ### **2. Feature Engineering**
-- Create new features to enhance model performance, such as:
-  - Time of day
-  - Day of the week
-  - Seasonal indicators
+- Encoding categorical features to enhance model performance, such as:
+  - Cloud Cover
+  - Location
+  - Season
 
 ### **3. Model Selection**
 - Experiment with various machine learning algorithms suitable for multi-class classification, including:
+  - Logistic Regression
   - Decision Trees
   - Random Forests
   - Support Vector Machines (SVM)
@@ -45,6 +50,7 @@ The dataset includes the following weather features:
   - Precision
   - Recall
   - F1-score
+  - Confusion Matrices
 
 ### **5. Model Deployment**
 - Deploy the best-performing model for real-time weather predictions.
